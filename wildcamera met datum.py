@@ -8,7 +8,7 @@ camera = PiCamera()
 
 while True: 
     pir.wait_for_motion() 
-    print("Bewegin gedecteerd") 
+    print("Beweging Gedecteerd") 
     timestamp = datetime.now().strftime("%c") 
     camera.start_recording("/home/pi/Desktop/verander.dit.naar.je.eigen.map!/{}.h264".format(timestamp))
     time.sleep(60)
